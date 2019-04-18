@@ -1,5 +1,6 @@
 // Toast variant mixin
-@mixin toast-variant($color: $dark-color) {
-  background: rgba($color, .95);
-  border-color: $color;
+@mixin toast-variant($color: $dark-color, $percent: 48%) {
+  background: lighten($color, $percent);
+  border-color: transparent;
+  color: darken($color, 5%);
 }
